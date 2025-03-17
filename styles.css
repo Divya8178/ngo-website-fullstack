@@ -1,0 +1,473 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 20px 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header .logo img {
+    width: 120px;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+header nav ul li a:hover {
+    color: #ff6f61;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #007bff;
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+    background-image: url('./image/hero.jpg') ; /* Example background image */
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero h1 {
+    font-size: 3.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.hero a {
+    background-color: #ff6f61;
+    color: white;
+    padding: 15px 40px;
+    font-size: 1.1em;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.hero a:hover {
+    background-color: #e05c4c;
+}
+
+/* Section Styles */
+section {
+    padding: 60px 20px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 3em;
+    margin-bottom: 30px;
+    font-weight: 700;
+    color: #333;
+}
+
+section p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+/* About Us Section */
+.about-us {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+.about-us h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #264653;
+}
+
+.about-us p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+/* Our Work Section */
+.our-work .work-item {
+    display: inline-block;
+    width: 45%;
+    margin: 20px 2.5%;
+    text-align: center;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.our-work .work-item:hover {
+    transform: translateY(-10px);
+}
+
+.our-work .work-item img {
+    width: 100%;
+    height: auto;
+}
+
+.our-work .work-item h3 {
+    margin-top: 20px;
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+/* Get Involved Section */
+.get-involved {
+    background-color: #f9fafb;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.get-involved h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #264653;
+}
+
+.get-involved p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    text-align: center;
+    line-height: 1.6;
+}
+
+/* Get Involved Options (Donate, Volunteer) */
+.get-involved .involved-options {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.get-involved .involved-option {
+    width: 48%;
+    padding: 25px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.get-involved .involved-option h3 {
+    font-size: 2em;
+    margin-bottom: 15px;
+    color: #2a9d8f;
+}
+
+.get-involved .involved-option p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+.get-involved .involved-option a {
+    display: inline-block;
+    background-color: #2a9d8f;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.get-involved .involved-option a:hover {
+    background-color: #264653;
+}
+
+/* Contact Us Section */
+.contact-us {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-us h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #264653;
+}
+
+.contact-us p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.contact-us .contact-details ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.contact-us .contact-details li {
+    margin-bottom: 15px;
+    font-size: 1.1em;
+}
+
+.contact-us .contact-details a {
+    color: #2a9d8f;
+    text-decoration: none;
+}
+
+.contact-us .contact-details a:hover {
+    text-decoration: underline;
+}
+
+.contact-us h3 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #2a9d8f;
+}
+
+.contact-us .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.contact-us .social-links a {
+    font-size: 1.5em;
+    color: #264653;
+    text-decoration: none;
+}
+
+.contact-us .social-links a:hover {
+    color: #2a9d8f;
+}
+
+/* Donation Section */
+.donation-form {
+    background-color: #fff;
+    padding: 40px;
+    text-align: center;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin: 50px 0;
+}
+
+.donation-form h2 {
+    font-size: 2.8em;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.donation-form p {
+    font-size: 1.2em;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.donation-form .input-field {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.1em;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.donation-form .input-field:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.donation-form .btn-primary {
+    background-color: #ff6f61;
+    color: white;
+    padding: 20px 40px;
+    font-size: 1.3em;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.donation-form .btn-primary:hover {
+    background-color: #e05c4c;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Volunteer Section */
+.volunteer-form {
+    background-color: #fff;
+    padding: 40px;
+    text-align: center;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin: 50px 0;
+}
+
+.volunteer-form h2 {
+    font-size: 2.8em;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.volunteer-form p {
+    font-size: 1.2em;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.volunteer-form .input-field {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.1em;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.volunteer-form .input-field:focus {
+    border-color: #28a745;
+    outline: none;
+}
+
+.volunteer-form .btn-primary {
+    background-color: #218838;
+    color: white;
+    padding: 20px 40px;
+    font-size: 1.3em;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.volunteer-form .btn-primary:hover {
+    background-color: #1c7a34;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+/* News and Events Section */
+.news-events .event {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.news-events .event:hover {
+    transform: translateY(-5px);
+}
+
+.news-events .event h3 {
+    font-size: 2em;
+    font-weight: 600;
+    color: #007bff;
+}
+
+.news-events .event p {
+    font-size: 1.2em;
+}
+
+/* Footer Section */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+footer p {
+    font-size: 1em;
+    margin: 10px 0;
+}
+
+footer a {
+    color: #ff6f61;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .our-work .work-item {
+        width: 100%;
+    }
+
+    .involved-option {
+        width: 100%;
+    }
+
+    .cta button {
+        width: 100%;
+        padding: 12px;
+        font-size: 1.1em;
+    }
+
+    section h2 {
+        font-size: 2.2em;
+    }
+
+    section p {
+        font-size: 1em;
+    }
+
+    footer p {
+        font-size: 0.9em;
+    }
+}
